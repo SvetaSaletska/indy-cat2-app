@@ -1,30 +1,114 @@
 .header {
-  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 30;
 }
 
-.nav-list {
+.header-container {
   display: flex;
-  align-items: center;
+  justify-content: space-between;
+  background-color: $_header_color !important;
+  padding: 16px;
+  box-sizing: border-box;
+  width: 100%;
+  position: relative;
+}
+
+.header-button-menu {
+  display: flex;
   justify-content: center;
-  gap: 40px;
-
-  @include media(tablet) {
-    justify-content: flex-start;
-  }
-
-  @include media(desktop) {
-    justify-content: flex-end;
-  }
+  align-items: center;
+  background-color: transparent;
+  padding: 9px 14px;
+  border: none;
+  z-index: 20;
 }
 
-.nav-link {
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  @include font(30, 40);
-  color: $_header_color;
+.header-desk-nav {
+  display: none;
 }
 
-.nav-link:hover,
-.nav-link:focus {
-  color: $_header_accent_color;
+.header-mob-nav {
+  position: absolute;
+  top: 73px;
+  left: 0px;
+  width: 100%;
+  z-index: 20;
+  background-color: $_header_color;
+  padding: 16px 16px 64px 16px;
+  overflow: hidden;
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  max-width: 320px;
+  display: flex;
+  transition: visibility 350ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 350ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.is-open {
+  pointer-events: auto;
+  opacity: 1;
+  visibility: visible;
+}
+
+.header-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  height: 100%;
+}
+
+.header-link {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  padding: 4px;
+  border-radius: 8px;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-link:hover {
+  background-color: $_header_accent_color;
+}
+
+.hidden {
+  display: none;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.header-backdrop {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  display: none;
+}
+
+.header-backdrop.is-visible {
+  display: block;
+}
+
+@media screen and (min-width: 1200px) {
+  .header-container {
+    padding: 24px 72px;
+  }
+  .header-desk-nav {
+    display: flex;
+  }
+  .header-button-menu {
+    display: none;
+  }
+  .header-list {
+    flex-direction: row;
+    gap: 32px;
+  }
 }
