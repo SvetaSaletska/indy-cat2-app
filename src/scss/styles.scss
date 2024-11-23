@@ -3,8 +3,8 @@
 @import './rewiews.scss';
 @import './about-us.scss';
 @import './advantages.scss';
-@import './privat-pages.scss';
-
+@import './privacy-pages.scss';
+@import 'common/container';
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
@@ -20,15 +20,4 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-}
-.container {
-  background-color: #e8e0a1;
-  width: 320px;
-  margin-left: auto;
-  margin-right: auto;
-}
-@media screen and (min-width: 1200px) {
-  .container {
-    width: 1200px;
-  }
 }
