@@ -37,6 +37,12 @@
   font-weight: 700;
   font-style: normal;
   @include font(16, 24);
-  margin-left: 35.5px;
-  margin-right: 35.5px;
+  align-items: center;
+}
+
+.advantages__map {
+  padding-top: 16px;
+  margin-left: 124px;
+  margin-right: 124px;
+  margin-bottom: 8px;
 }
