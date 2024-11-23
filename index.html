@@ -13,24 +13,206 @@
     />
     
     <script type="module" crossorigin src="/indy-cat2-app/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/indy-cat2-app/assets/index-170344a5.css">
+    <link rel="stylesheet" href="/indy-cat2-app/assets/styles-0d9a3438.css">
   </head>
   <body>
     <header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="./page-2.html" class="nav-link">Page 2</a>
-      </li>
+      <div class="header-container container">
+  <a href="./index.html" class="header-homepage-link">
+    <picture>
+      <source
+        srcset="/indy-cat2-app/assets/logo-desk-1f93dece.png 1x, /indy-cat2-app/assets/logo-desk@2x-732a21ec.png 2x"
+        type="image/png"
+        media="(min-width: 1200px)"
+      />
+      <source
+        srcset="/indy-cat2-app/assets/logo-mob-a58cba82.png 1x, /indy-cat2-app/assets/logo-mob@2x-4e5b2cae.png 2x"
+        type="image/png"
+        media="(max-width: 1199px)"
+      />
+      <img
+        src="/indy-cat2-app/assets/logo-mob-a58cba82.png"
+        alt="Indy Cat"
+        class="header-logo-image"
+      />
+    </picture>
+  </a>
 
-      <li class="nav-item">
-        <a href="./page-3.html" class="nav-link">Page 3</a>
+  <button type="button" class="header-button-menu" aria-label="toggle-menu">
+    <svg class="header-button-icon-open" width="24" height="24">
+      <use href="/indy-cat2-app/assets/symbol-defs-993a2d21.svg#icon-menu-open"></use>
+    </svg>
+    <svg class="header-button-icon-close hidden" width="24" height="24">
+      <use href="/indy-cat2-app/assets/symbol-defs-993a2d21.svg#icon-menu-close"></use>
+    </svg>
+  </button>
+
+  <nav class="header-desk-nav">
+    <ul class="header-list">
+      <li class="header-item">
+        <a href="#hero-id" class="header-link">Home</a>
+      </li>
+      <li class="header-item">
+        <a href="#reviews-id" class="header-link">Reviews</a>
+      </li>
+      <li class="header-item">
+        <a href="#about-us-id" class="header-link">About Us</a>
+      </li>
+      <li class="header-item">
+        <a href="#advantages-id" class="header-link">Advantages</a>
+      </li>
+      <li class="header-item">
+        <a href="#gallery-id" class="header-link">Gallery</a>
+      </li>
+      <li class="header-item">
+        <a href="#benefits-id" class="header-link">Benefits</a>
       </li>
     </ul>
   </nav>
-</header>
+  <div class="header-backdrop"></div>
+  <nav class="header-mob-nav">
+    <ul class="header-list">
+      <li class="header-item">
+        <a href="#hero-id" class="header-link">Home</a>
+      </li>
+      <li class="header-item">
+        <a href="#reviews-id" class="header-link">Reviews</a>
+      </li>
+      <li class="header-item">
+        <a href="#about-us-id" class="header-link">About Us</a>
+      </li>
+      <li class="header-item">
+        <a href="#advantages-id" class="header-link">Advantages</a>
+      </li>
+      <li class="header-item">
+        <a href="#gallery-id" class="header-link">Gallery</a>
+      </li>
+      <li class="header-item">
+        <a href="#benefits-id" class="header-link">Benefits</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+    </header>
 
     <main>
+      <section id="hero-id" class="hero-container container">
+  <div class="hero-description">
+    <h1 class="hero-title">
+      Indy Cat 2: <br />
+      Match 3 Game
+    </h1>
+    <p class="hero-text">
+      Embark on a Match-3 <br />
+      Adventure with Indy Cat!
+    </p>
+    <a
+      href="https://play.google.com/store"
+      target="_blank"
+      class="hero-button hero-button-desk"
+    >
+      <img src="/indy-cat2-app/assets/btn-img-8155dc09.svg" alt="Google Play" />
+    </a>
+  </div>
+
+  <picture>
+    <source
+      srcset="/indy-cat2-app/assets/screen-desk-img-71e71282.png 1x, /indy-cat2-app/assets/screen-desk-img@2x-0e034653.png 2x"
+      type="image/png"
+      media="(min-width: 1200px)"
+    />
+    <source
+      srcset="/indy-cat2-app/assets/screen-mob-img-ae0748b7.png 1x, /indy-cat2-app/assets/screen-mob-img@2x-f6d5ca7c.png 2x"
+      type="image/png"
+      media="(max-width: 1199px)"
+    />
+    <img
+      src="/indy-cat2-app/assets/screen-mob-img-ae0748b7.png"
+      alt="Game screens"
+      class="hero-image"
+    />
+  </picture>
+  <a
+    href="https://play.google.com/store"
+    target="_blank"
+    class="hero-button hero-button-mob"
+  >
+    <img src="/indy-cat2-app/assets/btn-img-8155dc09.svg" alt="Google Play" />
+  </a>
+</section>
+
+      <section id="reviews-id" class="reviews-container container">
+  <h2 class="reviews-title">Reviews</h2>
+  <ul class="reviews-list">
+    <li class="reviews-item">
+      <p class="rev-item-name">PuzzleMaster</p>
+      <p class="rev-item-text">
+        "A fantastic match-3 adventure! Love the storyline with Indy Cat."
+      </p>
+    </li>
+    <li class="reviews-item">
+      <p class="rev-item-name">TreasureHunter</p>
+      <p class="rev-item-text">
+        "Challenging and fun. The power-ups really help when levels get tough!"
+      </p>
+    </li>
+    <li class="reviews-item">
+      <p class="rev-item-name">AdventureLover</p>
+      <p class="rev-item-text">
+        "One of the best match-3 games I've played. Great graphics and
+        gameplay!"
+      </p>
+    </li>
+    <li class="reviews-item">
+      <p class="rev-item-name">CatFanatic</p>
+      <p class="rev-item-text">
+        "Indy Cat is adorable! The storyline makes it so much more engaging."
+      </p>
+    </li>
+    <li class="reviews-item">
+      <p class="rev-item-name">Match3Guru</p>
+      <p class="rev-item-text">
+        "Addictive and rewarding. The daily bonuses keep me coming back every
+        day!"
+      </p>
+    </li>
+  </ul>
+</section>
+
+      <section id="about-us-id" class="about-us-container container">
+  <h2 class="about-us-title">About the Game</h2>
+  <div class="about-us-wrapper">
+    <div class="about-us-description">
+      <h3 class="about-us-subtitle">Indy Cat 2: Match 3 Game</h3>
+      <p class="about-us-text">
+        invites players to join the adventurous Indy Cat on a journey through
+        ancient lands and forgotten ruins. With captivating match-3 puzzles,
+        powerful boosters, and a unique storyline, Indy Cat 2 offers both casual
+        fun and challenging gameplay for puzzle enthusiasts of all ages.
+      </p>
+    </div>
+
+    <picture class="about-us-image">
+      <source
+        srcset="/indy-cat2-app/assets/screen-desk-img-b8aaa605.png 1x, /indy-cat2-app/assets/screen-desk-img@2x-84f19933.png 2x"
+        type="image/png"
+        media="(min-width: 1200px)"
+      />
+      <source
+        srcset="/indy-cat2-app/assets/screen-mob-img-02f260a0.png 1x, /indy-cat2-app/assets/screen-mob-img@2x-1f7d974b.png 2x"
+        type="image/png"
+        media="(max-width: 1199px)"
+      />
+      <img
+        src="/indy-cat2-app/assets/screen-mob-img-02f260a0.png"
+        alt="Game screens"
+        class="about-us-image"
+      />
+    </picture>
+  </div>
+</section>
+
       <section class="advantages">
   <div class="container">
     <div class="wrapper">
