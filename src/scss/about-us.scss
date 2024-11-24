@@ -39,8 +39,8 @@
 @include media(desktop) {
   .about-us-container {
     background-image: image-set(
-      url(/img/about-us/bg-desk@.png) 1x,
-      url(/img/about-us/bg-desk@2x.png) 2x
+      url(../img/about-us/bg-desk.png) 1x,
+      url(../img/about-us/bg-desk@2x.png) 2x
     );
     background-repeat: no-repeat;
     background-position: top right;
