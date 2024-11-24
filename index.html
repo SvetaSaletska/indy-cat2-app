@@ -11,9 +11,13 @@
       href="https://fonts.googleapis.com/css2?family=Carter+One&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     
     <script type="module" crossorigin src="/indy-cat2-app/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/indy-cat2-app/assets/styles-0d9a3438.css">
+    <link rel="stylesheet" href="/indy-cat2-app/assets/styles-335ec9ea.css">
   </head>
   <body>
     <header class="header">
@@ -40,10 +44,10 @@
 
   <button type="button" class="header-button-menu" aria-label="toggle-menu">
     <svg class="header-button-icon-open" width="24" height="24">
-      <use href="/indy-cat2-app/assets/symbol-defs-993a2d21.svg#icon-menu-open"></use>
+      <use href="/indy-cat2-app/assets/symbol-defs-11faf4ea.svg#icon-menu-open"></use>
     </svg>
     <svg class="header-button-icon-close hidden" width="24" height="24">
-      <use href="/indy-cat2-app/assets/symbol-defs-993a2d21.svg#icon-menu-close"></use>
+      <use href="/indy-cat2-app/assets/symbol-defs-11faf4ea.svg#icon-menu-close"></use>
     </svg>
   </button>
 
@@ -111,6 +115,7 @@
       href="https://play.google.com/store"
       target="_blank"
       class="hero-button hero-button-desk"
+      rel="noopener"
     >
       <img src="/indy-cat2-app/assets/btn-img-8155dc09.svg" alt="Google Play" />
     </a>
@@ -137,6 +142,7 @@
     href="https://play.google.com/store"
     target="_blank"
     class="hero-button hero-button-mob"
+    rel="noopener"
   >
     <img src="/indy-cat2-app/assets/btn-img-8155dc09.svg" alt="Google Play" />
   </a>
@@ -213,60 +219,214 @@
   </div>
 </section>
 
-      <section class="advantages">
-  <div class="container">
-    <div class="wrapper">
-      <h2 class="title">Advantages</h2>
-      <ul class="advantages__list">
-        <li class="advantages__item">
-          <img
-            src="../img/Vector.png"
-            alt="Advantages map"
-            class="advantages__map"
-          />
-          <p class="advantages__title">Adventure-Based Gameplay</p>
-          <p class="advantages__descriptions">
-            Solve puzzles and progress through exciting storylines with Indy
-            Cat.
-          </p>
-        </li>
-        <li class="advantages__item">
-          <p class="advantages__title">Power-Ups and Boosters</p>
-          <p class="advantages__descriptions">
-            Use special power-ups to overcome challenging puzzles.
-          </p>
-        </li>
-        <li class="advantages__item">
-          <p class="advantages__title">Challenging Match-3 Levels</p>
-          <p class="advantages__descriptions">
-            Test your skills with over 1000 levels of increasing difficulty.
-          </p>
-        </li>
-        <li class="advantages__item">
-          <p class="advantages__title">Events and Updates</p>
-          <p class="advantages__descriptions">
-            Enjoy frequent updates and participate in limited-time events for
-            extra prizes.
-          </p>
-        </li>
-      </ul>
-    </div>
-
-    <div class="thumb">
-      <!-- Path to images as from index.html file -->
-      <img
-        class="pic"
-        src="./img/vite-logo.png"
-        alt="Vite logo"
-        width="640"
-        height="640"
-      />
-    </div>
+      <section class="advantages__container container">
+  <div class="wrapper">
+    <h2 class="title">Advantages</h2>
+    <ul class="advantages__list">
+      <li class="advantages__item">
+        <img
+          src="../img/advantages/map.png"
+          alt="Advantages map"
+          class="advantages__map"
+        />
+        <p class="advantages__title">Adventure-Based Gameplay</p>
+        <p class="advantages__descriptions">
+          Solve puzzles and progress through exciting storylines with Indy Cat.
+        </p>
+      </li>
+      <li class="advantages__item">
+        <img
+          src="../img/advantages/diamonds.png"
+          alt="Advantages map"
+          class="advantages__diamonds"
+        />
+        <p class="advantages__title">Challenging Match-3 Levels</p>
+        <p class="advantages__descriptions">
+          Test your skills with over 1000 levels of increasing difficulty.
+        </p>
+      </li>
+      <li class="advantages__item">
+        <img
+          src="../img/advantages/rocket.png"
+          alt="Advantages map"
+          class="advantages__rocket"
+        />
+        <p class="advantages__title">Power-Ups and Boosters</p>
+        <p class="advantages__descriptions">
+          Use special power-ups to overcome challenging puzzles.
+        </p>
+      </li>
+      <li class="advantages__item">
+        <img
+          src="../img/advantages/events.png"
+          alt="Advantages map"
+          class="advantages__events"
+        />
+        <p class="advantages__title">Events and Updates</p>
+        <p class="advantages__descriptions">
+          Enjoy frequent updates and participate in limited-time events for
+          extra prizes.
+        </p>
+      </li>
+    </ul>
   </div>
 </section>
 
-    </main>
+      <section class="swiper__container container">
+  <h2 class="title">Gallery</h2>
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img
+          srcset="../img/gallery/picture-2x.jpg"
+          src="../img/gallery/picture.jpg"
+          alt="Match 3"
+          width="261"
+          class="gallery-content__photos"
+        />
+      </div>
+      <div class="swiper-slide">
+        <img
+          srcset="../img/gallery/many-levels-2x.jpg"
+          src="../img/gallery/many-levels.jpg"
+          alt="Play many levels"
+          width="261"
+          class="gallery-content__photos"
+        />
+      </div>
+      <div class="swiper-slide">
+        <img
+          srcset="../img/gallery/travel-2x.jpg"
+          src="../img/gallery/travel.jpg"
+          alt="Travel around the world"
+          width="261"
+          class="gallery-content__photos"
+        />
+      </div>
+      <div class="swiper-slide">
+        <img
+          srcset="../img/gallery/play-anywhere-2x.jpg"
+          src="../img/gallery/play-anywhere.jpg"
+          alt="Play anywhere"
+          width="261"
+          class="gallery-content__photos"
+        />
+      </div>
+      <div class="swiper-slide">
+        <img
+          srcset="../img/gallery/win-2x.jpg"
+          src="../img/gallery/win.jpg"
+          alt="Win"
+          width="261"
+          class="gallery-content__photos"
+        />
+      </div>
+    </div>
+    <!-- <div class="swiper-button-next">
+      <svg class="icon">
+        <use href="../img/symbol-defs.svg#icon-arrow-right"></use>
+      </svg>
+    </div>
+    <div class="swiper-button-prev">
+      <svg class="icon">
+        <use href="../img/symbol-defs.svg#icon-arrow-left"></use>
+      </svg>
+    </div> -->
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
 
+      <section class="benefits__container container">
+  <div class="wrapper">
+    <h2 class="title">Benefits</h2>
+    <ul class="benefits__list">
+      <li class="benefits__item">
+        <img
+          src="../img/benefits/icon-Rewards.png"
+          alt="icon-Rewards"
+          class="benefits__icon-Rewards"
+        />
+        <p class="benefits__title">Daily Rewards</p>
+        <p class="benefits__descriptions">
+          Collect rewards every day to boost your gameplay
+        </p>
+      </li>
+      <li class="benefits__item">
+        <img
+          src="../img/benefits/icon-Offline.png"
+          alt="icon-Offline"
+          class="benefits__icon-Offline"
+        />
+        <p class="benefits__title">Offline Play</p>
+        <p class="benefits__descriptions">
+          Continue your adventure anytime, even without an internet connection
+        </p>
+      </li>
+      <li class="benefits__item">
+        <img
+          src="../img/benefits/icon-Storyline.png"
+          alt="icon-Storyline"
+          class="benefits__icon-Storyline"
+        />
+        <p class="benefits__title">Captivating Storyline</p>
+        <p class="benefits__descriptions">
+          Follow Indy Cat on his journey to uncover ancient artifacts
+        </p>
+      </li>
+      <li class="benefits__item">
+        <img
+          src="../img/benefits/icon-Content.png"
+          alt="icon-Content"
+          class="benefits__icon-Content"
+        />
+        <p class="benefits__title">Regular Content</p>
+        <p class="benefits__descriptions">
+          Enjoy new levels, challenges, and events added frequently
+        </p>
+      </li>
+      <li>
+        <a
+          href="https://play.google.com/store"
+          target="_blank"
+          class="hero-button hero-button-mob"
+          rel="noopener"
+        >
+          <img src="/indy-cat2-app/assets/btn-img-8155dc09.svg" alt="Google Play" />
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <footer class="footer">
+  <div class="container">
+    <div class="footer__main">
+      <ul>
+        <li>
+          <a
+            class="footer__link"
+            href="../privat-policy.html"
+            target="_blank"
+            rel="nofollow noopener noreferrer"
+            >Privacy Policy/</a
+          >
+          <a
+            class="footer__link"
+            href="../terms-and-conditions.html"
+            target="_blank"
+            rel="nofollow noopener noreferrer"
+            >Terms and Conditions</a
+          >
+        </li>
+      </ul>
+      <p>©2024 CoolStarAdventureHub.com, All rights reserved</p>
+    </div>
+  </div>
+</footer>
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/gallery.js"></script>
     
   </body>
 </html>
