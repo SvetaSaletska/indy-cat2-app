@@ -2,6 +2,18 @@
   height: 308px;
 }
 
+.gallery-title {
+  font-family: 'Carter One', system-ui;
+  font-weight: 400;
+  @include font(28, 42);
+  margin-bottom: 24px;
+  text-align: center;
+
+  @include media(desktop) {
+    @include font(48, 72);
+    margin-bottom: 40px;
+  }
+}
 // html,
 // body {
 //   position: relative;
