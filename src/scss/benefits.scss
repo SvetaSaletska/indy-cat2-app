@@ -1,5 +1,5 @@
-.advantages__container {
-  height: 910px;
+.benefits__container {
+  height: 986px;
 }
 
 .title {
@@ -14,17 +14,17 @@
   text-align: center;
 }
 
-.advantages__map,
-.advantages__diamonds,
-.advantages__rocket,
-.advantages__events {
+.benefits__icon-Rewards,
+.benefits__icon-Offline,
+.benefits__icon-Storyline,
+.benefits__icon-Content {
   padding-top: 16px;
   margin-left: 124px;
   margin-right: 124px;
   margin-bottom: 8px;
 }
 
-.advantages__list {
+.benefits__list {
   min-width: 320px;
   width: 288px;
   height: 183px;
@@ -36,16 +36,16 @@
   }
 }
 
-.advantages__item {
+.benefits__item {
   width: 288px;
   height: 183px;
   border-radius: 8px;
   margin-bottom: 16px;
   color: $_main_color;
-  background-color: $_header_accent_color;
+  background-color: $_header_color;
 }
 
-.advantages__title {
+.benefits__title {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   margin-bottom: 8px;
@@ -53,7 +53,7 @@
   text-align: center;
 }
 
-.advantages__descriptions {
+.benefits__descriptions {
   width: 256px;
   margin-left: 16px;
   margin-right: 16px;
@@ -64,7 +64,8 @@
   text-align: center;
 }
 
-.advantages__diamonds,
-.advantages__rocket {
-  padding-top: 28px;
+.hero-button {
+  margin-top: 24px;
+  margin-left: 44px;
+  margin-bottom: 32px;
 }
