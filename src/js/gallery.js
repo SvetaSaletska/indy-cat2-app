@@ -9,4 +9,28 @@ const swiper = new Swiper('.mySwiper', {
   },
   mousewheel: true, // Дозволяє прокручувати слайди колесом миші
   keyboard: true, // Дозволяє перемикати слайди за допомогою клавіатури
+  breakpoints: {
+    // Для екранів менше 768px
+    768: {
+      slidesPerView: 1, // Один слайд на екран
+      spaceBetween: 10, // Відстань між слайдами
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true, // Пагінація на мобільних
+      },
+    },
+    // Для екранів більше 768px (десктопи)
+    1024: {
+      slidesPerView: 'auto', // Один слайд на екран
+      spaceBetween: 10, // Відстань між слайдами
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next', // Стрілочка "наступний"
+        prevEl: '.swiper-button-prev', // Стрілочка "попередній"
+      },
+    },
+  },
 });

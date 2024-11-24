@@ -1,5 +1,10 @@
-.swiper__container {
+.gallery__container {
   height: 308px;
+  @include media(desktop) {
+    width: 1056px;
+    height: 414px; /* Висота слайду */
+    padding: 0 10px; /* Відступи з боків */
+  }
 }
 
 .gallery-title {
@@ -39,6 +44,11 @@
   justify-content: center;
   align-items: center;
   width: calc(100% - 10px);
+  @include media(desktop) {
+    width: 736px; /* Ширина слайда */
+    height: 414px; /* Висота слайда */
+    object-fit: cover; /* Щоб зображення не спотворювалось */
+  }
 }
 
 .swiper-slide img {
@@ -46,10 +56,24 @@
   width: 100%;
   height: auto;
   object-fit: cover;
+  @include media(desktop) {
+    width: 736px;
+    height: 414px;
+  }
 }
 
 .swiper-pagination {
   position: relative;
   margin-top: 24px;
   color: $_main_color;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  @include media(mobile) {
+    display: none;
+  }
+  @include media(desktop) {
+    display: flex;
+  }
 }
