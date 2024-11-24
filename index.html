@@ -17,7 +17,7 @@
     />
     
     <script type="module" crossorigin src="/indy-cat2-app/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/indy-cat2-app/assets/styles-d38bba8f.css">
+    <link rel="stylesheet" href="/indy-cat2-app/assets/styles-6c4898f7.css">
   </head>
   <body>
     <header class="header">
@@ -44,10 +44,10 @@
 
   <button type="button" class="header-button-menu" aria-label="toggle-menu">
     <svg class="header-button-icon-open" width="24" height="24">
-      <use href="/indy-cat2-app/assets/symbol-defs-11faf4ea.svg#icon-menu-open"></use>
+      <use href="/indy-cat2-app/assets/sprite-d2418fd0.svg#icon-menu-open"></use>
     </svg>
     <svg class="header-button-icon-close hidden" width="24" height="24">
-      <use href="/indy-cat2-app/assets/symbol-defs-11faf4ea.svg#icon-menu-close"></use>
+      <use href="/indy-cat2-app/assets/sprite-d2418fd0.svg#icon-menu-close"></use>
     </svg>
   </button>
 
@@ -115,7 +115,6 @@
       href="https://play.google.com/store"
       target="_blank"
       class="hero-button hero-button-desk"
-      rel="noopener"
     >
       <img src="/indy-cat2-app/assets/btn-img-8155dc09.svg" alt="Google Play" />
     </a>
@@ -142,7 +141,6 @@
     href="https://play.google.com/store"
     target="_blank"
     class="hero-button hero-button-mob"
-    rel="noopener"
   >
     <img src="/indy-cat2-app/assets/btn-img-8155dc09.svg" alt="Google Play" />
   </a>
@@ -219,61 +217,75 @@
   </div>
 </section>
 
-      <section class="advantages__container container">
-  <div class="wrapper">
-    <h2 class="title">Advantages</h2>
-    <ul class="advantages__list">
-      <li class="advantages__item">
-        <img
-          src="../img/advantages/map.png"
-          alt="Advantages map"
-          class="advantages__map"
+      <section id="advantages-id" class="advantages__container container">
+  <h2 class="advantages__title">Advantages</h2>
+  <ul class="advantages__list">
+    <li class="advantages__item">
+      <picture>
+        <source
+          srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAU/SURBVHgB7Zh5jF1THMe/xr6UsbRURK/aqaaUYlQ9sYvYgtEGpbZIiLUkxDIkSkpqa+xLFUHsYqtlWkuKoB0VVEVrqdA93ddpv9/5/W7mzum57743mab/zDf5zJv7zrnn/M45v/P7nfOATnWqw1RLdkSV2gDrVjJqMDmdlPy7BeR78iWZSH4hP+c1sBHWjVH9yE2kL/mDvEKWk+/IGHIoqSOnkD5knhv7LfmC/E2asg1eTc4jB6H9KpGRZC5ZTX51Q1PJyKGID+g4coPX+c3fn04GagbfJjuTGT6qxWQSGe+j+Zd8jbgOJKeRS7yjt2DLeTTZDzYjRdLsfeyk2ppcSh7WQzPp7QUy+ChyGXmeTPDRLCWNsBkaQm7052b/HOIGptLz/4EheTMIf1eD6UmeJueTxPtu+dMD+dJGGkCuJE/BfGoquQVtjcpqG9jM3xMxsBupcQOehK2C9CiZ7+33qMbAUEO9syIdDvOjz0k9eRXmX0vIQNjgGsheXv8Fsgg2+KS9Bm5GHiE/kdvJIG8oTyp7HLYrV3vn/SL1ZOybXv9ucmp7DDzEO9Iu1WZ4n/zg78tvdijz7uVeb5UbeQ6KlaAKA1VZPnVvpGwfMsU77p7zvqLCQph7aAOORJUG3upfapq1vbcIKivojvX/9yVnBOUbwma0EXEdjLV38QXeV1kDa/xhsn8qJipE7BpUVvhJ6yr6nxuUa+kugmWOUlB2opeH0iRchQKlnX7jn8/Bdp+ygGbjLP/+HXIALCzsCXNqDURh5zFYWFHcUyzrH/Sh2a+L9K0+eqJCA/tGyrQRXvb/J7nhu5MLYanperLS/5fhg7z8r6AdxbUxkfa7wqJBoeSDij93Rcq2w9rBOIyDCfkAtkkakK/QB++ETUKeEtmWnmYUd14jn6J1M0hzYEu4Bzk2p6Fp5KScMs2o/LpXpExuMRUFSpf4d/IMLF6FGgbzlf3LtKPw0jXyvdLYqpx3xsF2sma1RLZHGQOlrxCfpT9hM5F3qLwDFiN1GgqXWIfSa3LeewPmxyeTl2B+PjhWMQ3UW8KyRN5yKUbejLY+mPj7OnTuBjuqHZZ5pw9aU2G504ykkKPTdinbdnYGtVEa3BCFGOXEXWDLID3oBmalAKyZ12lY/tTkhqYaQc5EZdLZT5lqFDIbsyao9ADsOP4eeRd2DpTR450kqD+THEE+hMXAnbxeqo3RdtMVSf3LXSY40TtJEzL3AdiUf0Kug22YrMb5gOQWOhmP8s9U/VGdlK8V1BVVFOK0cSs6LCgYzyabo/LzoLJMfea5yAdDJQh8sJx0N1HdbI7eityHeLrSveR4tKbQSlQiz5LXYXm9ZXUrNVC+OC8wUA0o/k1xY6+ApbXhsOCsG+K0nPaUReRrGvho2KZUNlLq1BnzNvhFTfcNLXECi3d52gTmHwq8ilvavfVBnb1hNzn55ZxIG1pi3Ys3JRfD4uO2sIOwIshD5B+v24V85v1U5IOaIc3i2eQJ8hHs9leLYmnWdcGaBZvhuW7sgIL361DlkV/h5j/YVVMjXuEMi9RNfwxo9PYb/VkH1OH+vMLLFE5Ge3kJFpqk3t5Xy8iUcrqhMmV3sZZHAVrLJXc5ARZD5Q7K77pYdS/TlvK7VmWEG73IjVbgV4xtOe3o4DndCyb7l7qYH4P4EoRh5lrYsqXcD1v+9kqbS79WaCfXZn/dUriQkx8JOz0rp8qJNUM/wnbVRC9X9tCuU3LXzyZjYRdv/XzRjA5U0c9vvdyAEuxErQHIFZbBUprOkC+ibfZY75LBXdCpTnWM1gALrkfs0JK4JwAAAABJRU5ErkJggg== 1x, data:image/png;base64,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 2x"
+          type="image/png"
         />
-        <p class="advantages__title">Adventure-Based Gameplay</p>
-        <p class="advantages__descriptions">
-          Solve puzzles and progress through exciting storylines with Indy Cat.
-        </p>
-      </li>
-      <li class="advantages__item">
-        <img
-          src="../img/advantages/diamonds.png"
-          alt="Advantages map"
-          class="advantages__diamonds"
+        <img src="/img/header/map.png" alt="Map icon" />
+      </picture>
+
+      <p class="advantages__subtitle">Adventure-Based Gameplay</p>
+
+      <p class="advantages__descriptions">
+        Solve puzzles and progress through exciting storylines with Indy Cat.
+      </p>
+    </li>
+
+    <li class="advantages__item">
+      <picture>
+        <source
+          srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQwSURBVHgB7Zh3iFRXFMa/bExM/ogxphsxK4lJTC8kIfGPZDUhxEgSEhAVxd5AsKDYOwoighVsiAULVlRQEUVERcUuKjbcVex1xYpt/D7Oeezdx4zrzOyKf8wHP5h35r53zzv33nPODJBTTjk9Vs8hfVUik0gdpKeLpCm5lc5NzyN9DSStSG0yj6wmO0lN8jt5hZwi091+mTQn75BaZDkqUH3JJZJPRpFCUoN8QK6STuR/kiDfkqo+Zpzfc5YMRgWpnk/8G8kjL5JVsCjJiSFuz3MnzsGie4i84PYf/BmNUQ7qCHtrSXv1AFns1/t9oky5QqogC3X0BykytdzWgNwjrUl18r4ziOwOriP2kqExWzd/bgtkoci58+REzMkW/l2DYHxVt1UPbG+77dPA9j25SXohC3X1Bzcja0g7lByGfB/TBxbJusF9W0mP4LolORJcf0nOwKKdsaLINfHryEG4kycCJ3vD0sfnfq2J1wfPWkjG+2fdU4hycE5RaR7Y1gYOShNiTmpCbXYt/9d+v5b7VdhS/uhji5BlaomcCzeuHHuA0vtPGhmzjUDJ8utktyd/uVPv+XfjkYWUPrSsy8i/bmtDpsKqxU/kD1gO1GRVfPKVsH0Kd6Ah2eTfK6qvka/IDtIIdoLTPbljSXHkoCKoaKhETSFdUPLmY8g//gLTyDdkiU8caYY7UAyrtdXINthpfwu2P6v52LJKXTP3SQn+Z/iFIqBi/tCdU3VoHdwkJ7Xke/xFFsQe+hIsglEi1v2VYemmCLYi+bBVGIbUmkWOw6K/ixyMHNSeGgCrFKPJPtiGD3WbfEd6JnEQPn47OQqLmvSFP1+J/F3yJ8quMnWDl0lUik2i06dTqD1ZnMSJm0gtjVejoG1zIbDfhXVNK/0l5sAqTFzqghTpie6DIpgvBzvAOpHy0MkkNjmoQ7YZti+VyhIp7q9PNsAOlyrOf3LwGipeatFUm3c+xjlJgdI+PxqNUws0H5YWnknlJbGpx9uEipN+Kig66rDnksmw7ly2GvHB0SFRR6wqoFw1k6yLjRsOSyUqdxuRnY6Rz2ANrRoM5eBit52KD44iqOKu06XfG0qk9YMxOnGqKr/CWqo+yE5y6KB/VodzMWYrpSiCK2AdilTZnfyb/AIrfQXkMOw0HkL6epl8guSpK5QC9jG5Hxr7w/JbvcAmZ7UnFPLagX0wOU0+wpNJifo6LHWoQhTBfruk0mxYgi70z4m4kwXB4C2wHJmpc5GDCXdODUNDlF1J1KDUcSdLpaQBMSfDhnVoBs5Jb8L2mQ5XTZ90EazDjqP+USVWZfFDslQvFv9nQZHU8qqn6wc7PDr6bd3xI0hf2lNbg2t1RDdSjH2DdIbtVVGQ7K8PRVJlRi29qszrWTgXOjkyjfF3YIEqSjVAkdT6Z7KsT03d8Qw7l1NOObkeAd2EK3IBV8PlAAAAAElFTkSuQmCC 1x, data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAodSURBVHgB7ZsJsB1FFYZ/wpMliIqWUSGaq3mKG5EiuJShNGppoZYLiqWimFe4UCKioiyR7YWwmFKDlYCWolThAhVUFFAWQd9zQUsFt0JRtMjDoMTIkgRCAgFCf2+66XPn9sxd3rv3csP8Vafu3NM9PTNnTp9z+pweqUKFChUqVKhQoUKFChV6jR3UO+zt6MPqDVY5+r22IzzD0c2OtvWIbnX0AvUAvdLAXzo6IMf7naONBf2f7WhujneHoz+qGK91NMP8v8nRyx2t14DjbEXN+Jk5Pl/pF/gcR//zff6jqLn3Odqv4BpnmnGvNceXOXqcBhgnKz7MlzxvmeGdkes/29E/fNsGRy91VFMU6P+VaafFUWa8SzxvqeGdowHF6x09pOwhxhzt7PlMs8sUH/BQz0cbL/W8rY4ON2MtcHSvb7vB0RM8f76jLZ6P4J9ixrrAXONjGjAMO7pd2c1PKNMsi70UNQ0bhSDOUHzgzyXGPNq0X+RojqM1ipqZt5mzHP3Ft9/v6FUaEPBgqxUfbNjzd3Q0ZOhFju7y/YJ2Qaty/SytNP2C5iGcBQX9h/090I8X+lw9SlAr4DN18LjB6L/dtP1YvQtjiogX+yRNI2aofbxCWTixPNH2NEd7+uMd9ejDTspi0mlDu3EgwhtztIv/f6qjUWVvNwBbdLUyb7nZ0Zv9OfMcPVHpe8B7ohkXOvqKyvEmR8f747eqPM4jJGLa7+7oNkdvdPRn9QkL/U3kp8UXE31rypxHiOX2LR9alyt662b4ju/bTBDMhH8pOqr91UegecHgp2iJGrV5X3POOkfPLxn//YqOYXZJPzQ/ePeTSvo9S9GREUq9Tn2EFR4e7QJzfKWiEJcmziUQ3qi4Pq0VXIOQI8SMZQmH15jrvbKgD6bg74oe+jD1EVZ4E472cfRZxanJzV6t+FApx0JA/aBvZ0oVGfEf+T7XqBjf8H2I71IOcDdHvzH38yn1EQhvs2IMNc/zrQABnu0KlU/ntzja5Nv/qmyK5XGkb+eauyfaGTOsi1ck2lmdXGTu4wj1EQsVHYYVHsgLEPDmf6Jyx3K4ab9RjUKqmfZ3Jc5fYNoPSLSvMu2nqI+w0xbh5ZdIKQECNPEqlWviCYq2blyNQW2wXeeqEaOKSYZ8jHmuue4y9RF54c1L9CkSIEATgy0rciynmPbvKVtyBXza8zf5sSxCSPJVw+MFnWrG62vmxQrvFhXHbmUCBGiV1cSUY7Fprm8Z/n6Gb0OPuYb/TsNfbPjnqbclijpYh0Hmt0h4L1N0BiEWS900SUybskpN53NM+0rPY2qGDIpdkRzvebzgXT3vJHM+9reTZem0YKGiwygTHjHdrWoMor9Q0H+m6r1z3rEQFH9XjdM9CHaN6fsrz7vc/8djP+B512maEwTtIkxbNPB5BX1YBoWsMELGNo6r3usVaeLPTb9359o5x2rqJ5S9KBssc08hdXWwo4NMO0mNvdRnWG0aTbS/WFHIVkP3UL0QUw5jb39OWWzGlAwahodmaoaXhYM41B+TpR5RXNngsWflxlrs+3WLmIEvyT9Afkp+3rSR9AzTG8eSL+owdcbNuWeZNpKXa3JjFwW3jHO978PUDELH84blIlFBEN5qNS4LT048SzcIZXpEiDt4JiArPNPcDPZmTFnAe6cyr0hWYyJ347v4h3y1/3+6svBkzAtmgx+X6Uxt4stK45n+nLkqB96f9PzNhod9Pdofr3X0dH9M6RQtflCdgWUnCkWtBTmRFCHniRAP9OM/ItljVV8SXK/6acs6GC1MrS+ZzmPm3A1mDOu5my2vaoq1khTlszoowBLT/ltlOUcbWK9QZ+Al/EnRtJDkeKGiI2VmTpqzcKERZcHrrw0P4WHE5ytOZaS/R+KCaOK46l/APr6tVQEC1sn/VqPwNqjRyb3HtJMf3NO0fV31EcCQWseTFVdFCO+Tpg0hBp/AzKwTILCpJWquw+YEfssSkwg2eMzPGH47AgQIaq25N8ZcmOh3pOlD//m59hW5MVqlECIFzbM4wYy5LRV8rlO0i/coU+UQZxFGXKdi3JU7t1OwLYN0Pfm8UCMeb3IOtolUmBXiHeZ45zYorLVxWn8zY5zo6DR70XbUGtyi3gEDzX4XtPH8Jn1xEjhBXvSYsroJtNi3IwQefqtaA6kxtqQwo3gpb1Nmy0OoxouZLOK3K8Be41pPzcAigCCdlBZRAw+9k2/7g6M3qF4bWwHe/gfKhEiwP2TuietMOiem8PWebtNgg2UjiYa7lU1DPPS4smRuu8IDrKDQPMwSL2OG5x3srzEJmPt7ukqDD8oLo/6Y6UpJ9b/qHGwSCCVUbDsvY63t0LcMRhexxf8iwHs1dYQgHAHenW9EgBd7OlAV2gaG8SB/fKkqtI3tcQr3FI8VAX5I2WoIComGwwwvLAFHDG92KwO3EgeyQA95t9s1mCATNDPHG2qRV4qhxH+KM0EzqZKxMXxCzcE5LODDzi0W4Fe2eG63wTOEWnNQgnHDW+d/f2F4a9UiwsKYRfNZasyCrFZxqj8A4S0rOJfvNdpNJrSKkEyw4cURnrdJ04MP+vFsTnFEiWQCCcmQtqHU+AFli/masiB7VslFqKod648v9udu9ueSmB3oTw3KYKdwSFSSTcbAktJhSUQGuabMFrI7asKcwwvg84WgWRTVD1G2vZeA9psq3pG1XSDvhb/t6L3KhAewaeEzhJqyhXTN9Gfaftwfo3msE+/z/ylZHqLHAMLWM6bccEEfpuRW34/dVWydPU/R1v1Q6Wlqv/2wSdvpQt4GYm9tInapprZboaa409ZmtkcMb7LQE4SI0S/6FIBYKgjR7lb9voqFZ/etXKLpt4VWgDXFXamWlqszUG++KTEeaawR838SixSFSLWryGG8T1GIEDZu14K+y00/drXupulHECBmIwiPNDyFrwvVuSY+XrEmAh2n+kLVjcoJEByjek2sFQwetl5Q5EkF4tyoFV43NC/A1kTyNYwQl4a2jW3QFnPeUeZ6K9SokXVYZBoo381pvOemu7NOM2Pg0bsZwlgB8vLzJdepFtsxVbbGwmyzmrgtr0HUHljKUA/ABhDDkZScUHOgeezdCxqA88Cjt1qH6ARWA1htrDT/qYEs8cfscDizjXuhtnK6Yo2F70uIQHC0o47eoaz0ua1ogDLHktJAhGc1r5vT1oLij/0G+WzPR3h2Y3tLiYEcEFrYSoJnp4hO0uEGRXPxkbIBFqnesTzV81MCtEvAbjmMIhDs/9Rc3+7S/6emFsjzhUEQIr9218RxrQxgHQtCnKN6AfbSYZSB7RzXqNGG4QzWT5G2JsY9Rm1gkTmR3VZfUxSg/ca32w6jGbBXVhO7RSfai7YaG31UmX0pSsDiMFjGddNhtAKmM/tlupUoxhZeoQ5hHYulfk3bgYR1LP1wGNsFgmOpNG8KwL1XwqtQoUKFChUqVKhQoUKFvuBhYWxM4XMpZZEAAAAASUVORK5CYII= 2x"
+          type="image/png"
         />
-        <p class="advantages__title">Challenging Match-3 Levels</p>
-        <p class="advantages__descriptions">
-          Test your skills with over 1000 levels of increasing difficulty.
-        </p>
-      </li>
-      <li class="advantages__item">
-        <img
-          src="../img/advantages/rocket.png"
-          alt="Advantages map"
-          class="advantages__rocket"
+        <img src="/img/header/diamonds.png" alt="Diamonds icon" />
+      </picture>
+
+      <p class="advantages__subtitle">Challenging Match-3 Levels</p>
+      <p class="advantages__descriptions">
+        Test your skills with over 1000 levels of increasing difficulty.
+      </p>
+    </li>
+
+    <li class="advantages__item">
+      <picture>
+        <source
+          srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAP0SURBVHgBxZhpqFVVFMf/7xERhPUaKQu9QSEVQdFokFl9CLJ4UYl9qCypoIF6KIjg8O5zwgFRHPCDOKIgKiqiIooDqCj6QRRExeE54PBBnOf5/2eti8/zzn5333vu9f3hB/fus/c+a5+91trrnBo8fL1IPnReJ13IY+RJ0oHUkqvkLGmswcNRHfmHfEW6kltkJ9lGjpJT3u+SX5PBQ8lqVFkvkInkMjlD5pG7ZFTE2EVkBqqoBtg27SE9SGG3+sCMzBcZv4DMRBX0LFnoxg0I9OlN7qBtI1eQaaiwnsJ9v3qjSN9fyG2EjVxPRj6CymoZeY50I4eL9J0DM3CW/88nrj9KrqOCypMTJIfS1JPcRGsDFVg/ogJ62ieX4/+E8vQDHgycjv7/U2TQu2SpTyRCEaegGUxWkbnk20A/Rfo10kS+8DnLckEl3amwbZEjK1+dJp1T+r5MDsG2fgxZ7Df+LzB3PWxrlZp2oAx9Q47BAuBL0sl/Dw70n0ya3dCC+sNSUF1gTA83cgJKlI4erX58i8lHuQG1gTF6wvlE2+M+z8eBMTmU4X/aUq2qd2Ki04m2pJaQKYm2V9yAroExegCHUIJGuyHvJ9pldHORsUrGKgAKPqfo3NDGOLnMcfInIjUIttpuiXYVATr8/4iYo8nnuABLzHL+XKDvWJhPR0VvYSuGpFzrB3sKHRAnRfj3sIWGbv6a368PIrWOrE1pr3Hj+qJy6uxzzosdoJUWToZXYb5TKJd6wXJgJ1RGmnuvG9gxdtCvsLL7bgIZdhH3D/is6uKGKWpfQhl6BubQH8Hy0r9ID5pSpd1QZCthq+6rQ4U0jBxENn1CNiKuqi5Z+8kIlCfl0eUww5Rusi60lT7wyd9EadKRttbHboAVBDrPf48ZXIt4FaqVdyL7fwZLVZv9Pp+T7rCF6tVyPqqgRtjLTq/AdTm7AmkLLOLX4MFDP0fOoe3zO0o5spW8nXJtqBvZs0VbdzIdFpViJNJdYRM5gIxSObSP7CbPB/roScqnFrlB+q3SSudzQ2BMHnYe55BRcujmiIka3SgZVMhjm709Kb38tFVJR2scOQI73lrqb9i2FZPeOyYl2lSFK600IqPy5AZa13366KPVD4iYQ99SFrT4/xes0G1CRvVzI35LtP8MC4jY1Q+Hbbu2fKbP+T8yqt4nShrxdaBd5/KwwFwDyXlY4CjQ3kMF1JBihPwm7cmpiD0JSzVp+g72bUbuULVvjzoBbqYYkYNF90q0oxQg2p4xiXaVXSoUdpEn0E56C/b2lvbCvB1xubFq0pEm3xqfck3ReBjtaFwO9sFxNlo7dp5cQXwFUxUpZ6UlUpVI+ohTj3bUPQSC8IqHcVVlAAAAAElFTkSuQmCC 1x, data:image/png;base64,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 2x"
+          type="image/png"
         />
-        <p class="advantages__title">Power-Ups and Boosters</p>
-        <p class="advantages__descriptions">
-          Use special power-ups to overcome challenging puzzles.
-        </p>
-      </li>
-      <li class="advantages__item">
-        <img
-          src="../img/advantages/events.png"
-          alt="Advantages map"
-          class="advantages__events"
+        <img src="/img/header/rocket.png" alt="Rocket icon" />
+      </picture>
+
+      <p class="advantages__subtitle">Power-Ups and Boosters</p>
+      <p class="advantages__descriptions">
+        Use special power-ups to overcome challenging puzzles.
+      </p>
+    </li>
+
+    <li class="advantages__item">
+      <picture>
+        <source
+          srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAR4SURBVHgBzVhZiJZVGH5KoS4qLMGghZlKyGlC2mi1xgbUQmumTaSLnIoWMpts0eoi56IuiqjACqNcLhRRRMRdcUEQdy/cUHCZcUPHbVTcwPV9PM/xP/PN9833C8d/fODhfN973rOf877vOUA8DDU2G7cZh+MGwyfGS8YW4159f4YIuKlIvW7Gj4y3GRcaFwV5FcaNxn3GKslWGW83PmHcGui+LJ4xjjEeRCSshJsVz0bjD8ZafVM2INB/M9CrMTaoM2EdSxAJj6rCycZexrHGw4nGRqaUG5nQ4fL/ZnzOOEuyBxEBb6uyIYHsTuMb6kRVO2WrpNPX2CWQD1Wd7yECvlVlVYiHd1XnV3mKNyMfzyttQTwsV1qep5h2irkvuNfuMT4Mtwy7EGm/BNimOqfDHUIeKJ74TVkFyowr0HpjX1KBxxAfrHNHSnvsQ7e0Aj9LYbbxc+MrKGIJIqAn3P4eZpyEbKuAUcrshY7DS+rDH14QHpIZSt9Cx+F9pfOyFOjseVq7oPToajwCd1iuImlm/oHrXF+UHn2Mdxn/DIWdE0orlFYk5NXG1caTgexJuBE3wQ2qT5B3Fi6AYB69Dk9smu9lue7GtXAmjdiBDPRAwfG/GMj7SzYhUTFl4/X/L9qai7+VN9p40Xh3SptzlEf0RiHAeCCpSD97WgpfJ/IGBo3WS3a//qfof5z+6WMHi/cqr155dXCOYQSc+brFeMK4LGjLBxgXjJ964QgJeUDS9l7YweOqPKuD96WUfxwF0+FXYyac7eP3qIQ+g5OmYMBXfhqRbZR9Bxco3WCszOjgHnGn8QvldYKLBdnGRBRCr1/0XZPSZnfpHOAh4VTfinzMNa43fmP8NUPnvFIu5SF9c7l4CF6Fm3mCe/hLfS/NqOcUXOSNDzUSBgQDUpT9DA7T/xoUlryYJSbqgzLTgu81Kbp0FM3KH+yFvPS0SNiQ08FyOPOS1kEua51YHtRRGXTqKeM6ff+VaKsBhS0wJJF3pUJvZnoH8mrJBgWyWrQ2M/+jrZkZHehzGx01btf/d2i7/2pQMDM9kIHXkR5NcP90SshegDPCBPfWa3An0DPpLmmIvX3jje/ZRL43Me16sZ+kNBClxyC1/X17Spxe3ti6ovTgjHPvNWcpMEDlCMai4/C7+lDtBWE000/pOHQcpimt9YIwmjmmlKbiGbgTR4+wAdcPNOhlcMEJt1V/yVOfRHhRmY+25oKdLOWlaQmCS1PatZNPHbRDNAmPwF07t0geExw4Z49hWROca2Rk04hrxHi4kZUhHnqqztz9XszLwhalFYgH/wiwOU+xM/KxXyk9gb9t0WbRqTM4YKQyO6MsvQJfszhIviselfwhpTsRARwtl4MHiO6NlxofWHj+mFKuIaHDznFJeWKnSlaJSEg+YNLa8wGTvtsHGP0C/XfQ+gFzeKDnOb+Yhot9Ai6Hi824ZxejdZDJE8/b4Dnj03Dbhk/Ed8CF+02BLj0Eb3+8Hf6HiE/AeeCDuZ8xv/wf4wZDHdxs7TZ+gEi4DALVVkrxA6coAAAAAElFTkSuQmCC 1x, data:image/png;base64,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 2x"
+          type="image/png"
         />
-        <p class="advantages__title">Events and Updates</p>
-        <p class="advantages__descriptions">
-          Enjoy frequent updates and participate in limited-time events for
-          extra prizes.
-        </p>
-      </li>
-    </ul>
-  </div>
+        <img src="/img/header/events.png" alt="Events icon" />
+      </picture>
+
+      <p class="advantages__subtitle">Events and Updates</p>
+      <p class="advantages__descriptions">
+        Enjoy frequent updates and participate in limited-time events for extra
+        prizes.
+      </p>
+    </li>
+  </ul>
 </section>
 
-      <section class="swiper__container container">
-  <h2 class="title">Gallery</h2>
+      <section class="gallery__container container">
+  <h2 class="gallery-title">Gallery</h2>
   <div class="swiper mySwiper">
     <div class="swiper-wrapper">
       <div class="swiper-slide">
@@ -337,65 +349,71 @@
 </section>
 
       <section class="benefits__container container">
-  <div class="wrapper">
-    <h2 class="title">Benefits</h2>
-    <ul class="benefits__list">
-      <li class="benefits__item">
-        <img
-          src="../img/benefits/icon-Rewards.png"
-          alt="icon-Rewards"
-          class="benefits__icon-Rewards"
+  <h2 class="advantages__title">Benefits</h2>
+
+  <ul class="benefits__list">
+    <li class="benefits__item">
+      <picture>
+        <source
+          srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACkAAAAoCAYAAABjPNNTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAdiSURBVHgB1Zh7kJZzFMdPWelGm0qlaEOUkNxFbHItjDAMocyQTOnCNIQUMSHKGIxpJGqGcY1cxi02MYNyWUJot02kbXUhEkrOp/N97LvPvntr6w9n5jvzPO/7u5zfuXzP+T0NbMdJU6GhY6NjvWOLbYM0sPpJriPf0dOxt6O7o42jpaNFauxmxyrHGkeJ4zvHl45CxwLbzkq2cgx3nOE42rHI8bE2/MnxueMXKbXBscnR2NFE2MuR5zjIcYjjUI19zTHT8UZ9lGzvuNkx1PGO41HHq451jt0cbR2HSRGs2EbPuPsvx6+OMsdvjmWOYh0KOcFxqmOgRUjc6ni8rkpy2jcdLzvGWsTYAEdvC4u204ZYEEtu0GYo97eFJXMcuzg6OPa0sCZj3nfMczxr4ZXBjvGOFx2jsimTK2QKi5U4rtf7CMdaxweOGx0nWli5roLCWP5SC6utdMzRfuDbqpTkBPelfjvfUaDnPo4VUmx7C8k2zfG63s9xLOYhJ2MQpxmgZ+JpoJ5bO/a1iC3iiMQ5xlHk+MG2n/RwHG/heoS43jU9iEwjGWbrOREShdiZovf9LSiD3+Y6JjjOcnSziL3aCDF5hOMKxwzHUosQwpOEAYm03PEjg9OJAy00cnySUvJKTW4mpbB6nqOv4zgLKxyg//9xlFpw4kYdBuVhADyEdaAlvECS4ZGXLCzIGlc7LrNgDsKqQ05KyUWWXTjlyRaZd5MULXDMsgj2Mo0jgVpKmWwCkUNFqy2oiIMTStDPLRYsgifxVjcpaTlWN3lMOMkioR7QYgT4NxZugzehI7L1d81rIuWPtIi1jo4DpcxOjvccL1jkxDrN6ZZsWp2SLIgrSRZilDoM/+1nYcW3NS5X/3fXwl0tSiVCOJFwm/VeJsUpiRQEXPy9ldf03YU1WmdJNsU47QQLXsTFxAXkCyc+YxFzLNjJdoyQREMc/bX/BekBCUmTsWc7drbyBuJii1hZKiW7ZsyDNmam1uooZAp1vmnGO16alRrDHnhutfasIHdZWI9AJQuvsnDpeik2TeOYCP2skmIXOa51fJZaD4uMT/22JaU4Mf21xSEnOj61MBK6VKh6xExfnaiXBX3QjUAR0y1cvMIqCzGIS8jKfP02T1aA28604LmntWZjrQfXNpEhTnHsYWE1GIIYpzdYl94MJa+xaBTwP6XoTqvozpqEsCBpumheZylBfDfUGKyIlWg4SAr4kbi+0IKCapSRWgBXYGbcC5kPssrNxrYIcZhvEQL0nQmj8F5UzbxJFnH83wROPN/CBVjkEscwC04kbr5yfGHBfVgCKqEtg5ChF6wJ/+VJKdzYSZv00PinLDyFhe+16H6Kq1BwnIWR9nFMSZR83iJxFlqUqOnagGYCVx5rwY/5FlWirQ6W5kHcSUlcLgXu1prF2pBaDYt8ZNHATKxCSfiW2KVPhTe3unuG/sxzTLZwealOT6b3lnJ1EQ5FzE21yFySkURK2rzTrHp30+yQzFstQUE/ynF5ahCW7GdhRUoYpE4mQj+J23E3SYE1cSOh0kRj6cgLBRijwCpm7umOeyyammoFJfMtSLSnNqcDx5obUmObW3TSWBQ3UHMbWfmVFWX/tKCsJZadugZbcCqYqXmlUhQrv2LRgGSV2yxcPEibtc74L9uVojaSbR71mm4nqV4kGIk1QYoT04ReXlWLXmeRPChJ5jXT7wO1eKaMtujOE4GsuXZklr3BGfPwGGFTpPW3SEkud1zsemsMnqKw0HSMsCoErhyixTA7N7bnLAK/Q8Y4Nh+U8Z6rjZM+EmUT7zxsUYWIx/stkoHYpVqNklIlwnDNP9eCu/tZDUL1GCmFkgQhGZZpAdxDlwRlvWvl1lmrZ2KNcne7Rdw3rWG/JNvv0DsHKOChun5ysUAyQNS4gu4I63JiLN0wYzwWK5NyxTpYXYR2kJtiL71jhDG1nZxcxIbqfYJFVmJhYpNYa2Z1F2Iwz+I+A5figfn6jU8xdPpZL2K4N2l8M5XkRFAOJ52k3/MtkqqLFi3SooQEFednK6cxyiZNB9UD+iL2qWYkXInjLYvrA18z+CLyiMUVhBivcBG7wSIjc6TQuIz/iDVKGslA6/+kBY3g/j8sKIsY5ssatNIiQ7mGUpxCsFIKMedDK79O0Pqd53hI88dozyfMKsYkMUGVoWIstMpSYuEaeG60LErNXyAs0gGwIskFmW/SXDyWm1hGh6HCHWxxx+Ywc2UoaIlwSspnBSULLCoILpiT8TsnbZlSdqSeO8sK8Fx/vdN8tLLsQhImN0m6Kz7zTdYhN6XG4s1Sq6XkSrGxeifja3MRw83QDh8DatucoDDNd56Fu4dZHaSHJvHlIn1bpPkYanWXbPMoiXiRTJ9i2yB5WgQlSRoqDspyoUpfxB60yhxHtqcvYoV6Jv6magxfjPtbPQXFcMM8K7+7rJVSuCrfgkNpw6AcwqWdxvJhi68UJM3s1Hz6xz7ZNqzvh32oh1DgG87hFtZur9+bp8aSGCQMnQ69ANnPnQcvFNr/Xf4F5IvWhhaksV8AAAAASUVORK5CYII= 1x, /indy-cat2-app/assets/rewards@2x-ff919f63.png 2x"
+          type="image/png"
         />
-        <p class="benefits__title">Daily Rewards</p>
-        <p class="benefits__descriptions">
-          Collect rewards every day to boost your gameplay
-        </p>
-      </li>
-      <li class="benefits__item">
-        <img
-          src="../img/benefits/icon-Offline.png"
-          alt="icon-Offline"
-          class="benefits__icon-Offline"
-        />
-        <p class="benefits__title">Offline Play</p>
-        <p class="benefits__descriptions">
-          Continue your adventure anytime, even without an internet connection
-        </p>
-      </li>
-      <li class="benefits__item">
-        <img
-          src="../img/benefits/icon-Storyline.png"
-          alt="icon-Storyline"
-          class="benefits__icon-Storyline"
-        />
-        <p class="benefits__title">Captivating Storyline</p>
-        <p class="benefits__descriptions">
-          Follow Indy Cat on his journey to uncover ancient artifacts
-        </p>
-      </li>
-      <li class="benefits__item">
-        <img
-          src="../img/benefits/icon-Content.png"
-          alt="icon-Content"
-          class="benefits__icon-Content"
-        />
-        <p class="benefits__title">Regular Content</p>
-        <p class="benefits__descriptions">
-          Enjoy new levels, challenges, and events added frequently
-        </p>
-      </li>
-      <li>
-        <a
-          href="https://play.google.com/store"
-          target="_blank"
-          class="hero-button hero-button-mob"
-          rel="noopener"
-        >
-          <img src="/indy-cat2-app/assets/btn-img-8155dc09.svg" alt="Google Play" />
-        </a>
-      </li>
-    </ul>
-  </div>
+        <img src="data:image/png;base64,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" alt="Rewards icon" />
+      </picture>
+
+      <p class="benefits__title">Daily Rewards</p>
+      <p class="benefits__descriptions">
+        Collect rewards every day to boost your gameplay
+      </p>
+    </li>
+
+    <li class="benefits__item">
+      <img
+        src="../img/benefits/icon-Offline.png"
+        alt="icon-Offline"
+        class="benefits__icon-Offline"
+      />
+      <p class="benefits__title">Offline Play</p>
+      <p class="benefits__descriptions">
+        Continue your adventure anytime, even without an internet connection
+      </p>
+    </li>
+
+    <li class="benefits__item">
+      <img
+        src="../img/benefits/icon-Storyline.png"
+        alt="icon-Storyline"
+        class="benefits__icon-Storyline"
+      />
+      <p class="benefits__title">Captivating Storyline</p>
+      <p class="benefits__descriptions">
+        Follow Indy Cat on his journey to uncover ancient artifacts
+      </p>
+    </li>
+
+    <li class="benefits__item">
+      <img
+        src="../img/benefits/icon-Content.png"
+        alt="icon-Content"
+        class="benefits__icon-Content"
+      />
+      <p class="benefits__title">Regular Content</p>
+      <p class="benefits__descriptions">
+        Enjoy new levels, challenges, and events added frequently
+      </p>
+    </li>
+
+    <li>
+      <a
+        href="https://play.google.com/store"
+        target="_blank"
+        class="hero-button hero-button-mob"
+        rel="noopener"
+      >
+        <img src="/indy-cat2-app/assets/btn-img-8155dc09.svg" alt="Google Play" />
+      </a>
+    </li>
+  </ul>
 </section>
 
     </main>
@@ -414,8 +432,8 @@
 
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="./js/gallery.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/gallery.js"></script> -->
     
   </body>
 </html>
