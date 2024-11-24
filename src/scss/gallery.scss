@@ -14,20 +14,10 @@
     margin-bottom: 40px;
   }
 }
-// html,
-// body {
-//   position: relative;
-//   height: 100%;
-// }
 
-// body {
-//   background: #eee;
-//   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-//   font-size: 14px;
-//   color: #000;
-//   margin: 0;
-//   padding: 0;
-// }
+.swiper-pagination-bullet {
+  background-color: $_main_color;
+}
 
 .swiper-wrapper {
   width: 288px;
