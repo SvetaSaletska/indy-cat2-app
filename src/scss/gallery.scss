@@ -1,9 +1,16 @@
 .gallery__container {
   height: 308px;
   @include media(desktop) {
-    width: 1056px;
-    height: 414px; /* Висота слайду */
-    padding: 0 10px; /* Відступи з боків */
+    width: 100%;
+    height: 100%;
+    // width: 1056px;
+    // height: 414px; /* Висота слайду */
+    // padding: 0 10px; /* Відступи з боків */
+    // overflow: hidden;
+    width: 100%;
+    padding: 0 60px; /* Залишаємо простір зліва і справа для стрілок */
+    overflow: visible; /* Дозволяє частинам слайдів виходити за межі */
+    position: relative;
   }
 }
 
@@ -29,10 +36,17 @@
   height: 146px;
   margin-left: 16px;
   margin-right: 16px;
+  @include media(desktop) {
+    width: 736px; /* Ширина слайда */
+    height: 414px; /* Висота слайда */
+    object-fit: cover; /* Щоб зображення не спотворювалось */
+    margin-left: 72px;
+    margin-right: 72px;
+  }
 }
 
 .swiper {
-  width: 100%;
+  width: 876px;
   height: 100%;
 }
 
@@ -43,18 +57,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: calc(100% - 10px);
-  @include media(desktop) {
-    width: 736px; /* Ширина слайда */
-    height: 414px; /* Висота слайда */
-    object-fit: cover; /* Щоб зображення не спотворювалось */
-  }
+  margin-right: 0px;
+  width: 100%;
+  // @include media(desktop) {
+  //   width: 736px; /* Ширина слайда */
+  //   height: 414px; /* Висота слайда */
+  //   object-fit: cover; /* Щоб зображення не спотворювалось */
+  //   overflow: hidden;
+  // }
+  background-color: $_main_bg_color;
 }
 
 .swiper-slide img {
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
   @include media(desktop) {
     width: 736px;
