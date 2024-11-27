@@ -1,6 +1,6 @@
 const swiper = new Swiper('.mySwiper', {
   loop: true, // Дозволяє перехід з останнього слайду на перший
-  slidesPerView: '1', // Автоматичне налаштування ширини слайдів
+  slidesPerView: 'auto', // Автоматичне налаштування ширини слайдів
   spaceBetween: 10, // Відстань між слайдами
   centeredSlides: false, // Не центрує слайди, щоб частина наступного була видна справа
   pagination: {
@@ -10,16 +10,6 @@ const swiper = new Swiper('.mySwiper', {
   mousewheel: true, // Дозволяє прокручувати слайди колесом миші
   keyboard: true, // Дозволяє перемикати слайди за допомогою клавіатури
   breakpoints: {
-    // Для екранів менше 768px
-    768: {
-      slidesPerView: 1, // Один слайд на екран
-      spaceBetween: 10, // Відстань між слайдами
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true, // Пагінація на мобільних
-      },
-    },
-    // Для екранів більше 768px (десктопи)
     1024: {
       loop: true,
       slidesPerView: 'auto', // Один слайд на екран

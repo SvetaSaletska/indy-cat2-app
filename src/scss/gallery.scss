@@ -45,8 +45,12 @@
 }
 
 .swiper {
-  width: 876px;
-  height: 100%;
+  width: 288px;
+  height: 146px;
+  @include media(desktop) {
+    width: 876px;
+    height: 100%;
+  }
 }
 
 .swiper-slide {
