@@ -1,4 +1,5 @@
 .gallery__container {
+  position: relative;
   height: 308px;
   @include media(desktop) {
     width: 100%;
@@ -9,7 +10,6 @@
     // overflow: hidden;
     padding: 0 60px; /* Залишаємо простір зліва і справа для стрілок */
     overflow: hidden; /* Дозволяє частинам слайдів виходити за межі */
-    position: relative;
   }
 }
 
@@ -100,24 +100,22 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  z-index: 10; /* щоб кнопки були поверх інших елементів */
-  background-color: rgba(0, 0, 0, 0.5); /* напівпрозорий фон для кнопок */
-  color: white;
+  z-index: 1000; /* щоб кнопки були поверх інших елементів */
   padding: 10px;
   border-radius: 50%;
 }
 
 .swiper-button-next {
-  right: 10px;
+  right: 0px;
 }
 
 .swiper-button-prev {
-  left: 10px;
+  left: 0px;
 }
 
 .swiper-button-next,
 .swiper-button-prev {
-  position: fixed; /* Фіксоване позиціонування для тестування */
+  position: absolute; /* Фіксоване позиціонування для тестування */
   top: 50%;
   transform: translateY(-50%);
 }
