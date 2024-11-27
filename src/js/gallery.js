@@ -1,28 +1,33 @@
+import Swiper from 'swiper';
+import { Navigation, Pagination } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+
 const swiper = new Swiper('.mySwiper', {
-  loop: true, // Дозволяє перехід з останнього слайду на перший
-  slidesPerView: 'auto', // Автоматичне налаштування ширини слайдів
-  spaceBetween: 4, // Відстань між слайдами
-  centeredSlides: false, // Не центрує слайди, щоб частина наступного була видна справа
-  pagination: {
-    el: '.swiper-pagination', // Елемент пагінації
-    clickable: true, // Дозволяє кліки по крапочках пагінації
+  slidesPerView: 'auto',
+  spaceBetween: 4,
+  loop: true,
+  modules: [Navigation, Pagination],
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
   },
-  mousewheel: true, // Дозволяє прокручувати слайди колесом миші
-  keyboard: true, // Дозволяє перемикати слайди за допомогою клавіатури
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
   breakpoints: {
-    1024: {
-      loop: true,
-      slidesPerView: 'auto', // Один слайд на екран
-      spaceBetween: 32, // Відстань між слайдами
-      centeredSlides: false,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      navigation: {
-        nextEl: '.swiper-button-next', // Стрілочка "наступний"
-        prevEl: '.swiper-button-prev', // Стрілочка "попередній"
-      },
+    1200: {
+      spaceBetween: 32,
     },
   },
+});
+
+document.addEventListener('keydown', event => {
+  if (event.key === 'ArrowLeft') {
+    swiper.slidePrev();
+  } else if (event.key === 'ArrowRight') {
+    swiper.slideNext();
+  }
 });

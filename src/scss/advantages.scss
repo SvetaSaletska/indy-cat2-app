@@ -53,6 +53,12 @@
     width: 358px;
     height: 231px;
     text-align: left;
+    position: relative;
+    overflow: hidden;
+
+    &:hover {
+      transform: scale(1.1) !important;
+    }
   }
 }
 
