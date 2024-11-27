@@ -46,7 +46,7 @@
 
 .swiper {
   width: 288px;
-  height: 146px;
+  height: 100%;
   @include media(desktop) {
     width: 876px;
     height: 100%;
@@ -76,6 +76,7 @@
   display: block;
   width: 100%;
   height: 100%;
+  border-radius: 8px;
   object-fit: cover;
   @include media(desktop) {
     width: 736px;
