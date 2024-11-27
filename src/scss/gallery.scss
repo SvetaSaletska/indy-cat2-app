@@ -100,7 +100,7 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  z-index: 1000; /* щоб кнопки були поверх інших елементів */
+  z-index: 10; /* щоб кнопки були поверх інших елементів */
   padding: 10px;
   border-radius: 50%;
 }
